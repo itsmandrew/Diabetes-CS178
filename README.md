@@ -2,7 +2,7 @@
 
 This program is ran on Python 3.10.
 
-If you are currently running a different Python version, you can follow this so that you can change Python versions and create the environment for this project. [Link text Here](https://ggkbase-help.berkeley.edu/how-to/install-pyenv/)
+If you are currently running a different Python version, you can follow this so that you can change Python versions and create the environment for this project. (Optional if conda-forge doesn't work) [Link text Here](https://ggkbase-help.berkeley.edu/how-to/install-pyenv/)
 
 Clone the repository.
 
@@ -16,6 +16,8 @@ We also use miniconda for the virtual environment by following these steps.
 (current directory)
 
 ```bash
+conda config --add channels conda-forge
+conda search python # Checking if the Python version is there
 conda create --name [name_of_env] python3.10
 ```
 
